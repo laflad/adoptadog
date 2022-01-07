@@ -1,0 +1,60 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 2rem 7rem;
+  }
+
+.gridblog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 2rem 12rem;
+}
+.featuredimg {
+    display: block;
+    max-width: 500px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.adoptpic {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.adoptedpic {
+    float: left;
+    display: block;
+    object-fit: cover;
+    width:60px;
+    height:60px;
+    /* padding: 1rem 1rem; */
+}
+
+.blogimg {
+    float: left;
+    display: block;
+    object-fit: cover;
+    width:260px;
+    height:260px;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 10px;
+}
+
+button, input, select, textarea {
+    box-sizing: border-box;
+    display: block;
+    margin: 1rem;
+}
