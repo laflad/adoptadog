@@ -7,17 +7,38 @@ header {
     color: #81B741;
 }
 
-h1 {
-    font-family: 'Neuton', serif;
-    font-size: 28pt;
-    color: #093C5F;
+@media screen and (min-width: 601px) {
+    h1 {
+        font-family: 'Neuton', serif;
+        font-size: 28pt;
+        color: #093C5F;
+    }
 }
 
-h2 {
-    font-family: 'Neuton', serif;
-    font-size: 24pt;
-    color: #093C5F;
-    margin: -1rem;
+@media screen and (max-width: 600px) {
+    h1 {
+        font-family: 'Neuton', serif;
+        font-size: 14pt;
+        color: #093C5F;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    h2 {
+        font-family: 'Neuton', serif;
+        font-size: 24pt;
+        color: #093C5F;
+        margin: -1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-family: 'Neuton', serif;
+        font-size: 12pt;
+        color: #093C5F;
+        margin: -1rem;
+    }
 }
 
 .sub-title {
@@ -32,20 +53,44 @@ h3 {
     margin: 0rem 0rem .5rem 0rem;
 }
 
-.topcart {
-    font-family: 'Work Sans', sans-serif;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
+@media screen and (min-width: 601px) {
+    .topcart {
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        font-size: 14pt;
+        font-weight: 600;
+    }
 }
 
-.header-box2 {
-    float: right;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    font-size: 14pt;
-    text-align: right;
+@media screen and (max-width: 600px) {
+    .topcart {
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        font-size: 10pt;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .header-box2 {
+        float: right;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14pt;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-box2 {
+        float: right;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        font-size: 10pt;
+        text-align: right;
+    }
 }
 
 .banner {
@@ -58,24 +103,46 @@ h3 {
     padding: 2rem 14rem;
 }
 
-section {
-    margin: 1rem 17rem;
+@media screen and (min-width: 601px) {
+    section {
+        margin: 1rem 17rem;
+    }
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 70px;
-    grid-row-gap: 70px;
-    clear: left;
-    padding: 70px 2rem;
-  }
+@media screen and (min-width: 601px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 70px;
+        grid-row-gap: 70px;
+        clear: left;
+        padding: 70px 2rem;
+    }
 
-.gridblog {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 50px;
-    grid-row-gap: 20px;
+    .gridblog {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 70px;
+        grid-row-gap: 70px;
+        clear: left;
+        padding: 70px 2rem;
+    }
+
+    .gridblog {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+    }
 }
 
 aside {
@@ -85,6 +152,7 @@ aside {
 
 .featuredimg {
     float: left;
+    width: 100%;
     max-width: 360px;
     height: 360px;
     object-fit: cover;
@@ -93,6 +161,7 @@ aside {
 
 .blogimg {
     float: left;
+    width: 100%;
     max-width: 260px;
     height: 260px;
     object-fit: cover;
@@ -119,10 +188,20 @@ aside {
     padding: 2rem;
 }
 
-.adoptfeat > p {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
-    font-size: 18pt;
+@media screen and (min-width: 601px) {
+    .adoptfeat > p {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 18pt;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .adoptfeat > p {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 11pt;
+    }
 }
 
 .blogcontainer {
@@ -131,21 +210,42 @@ aside {
     font-family: 'Work Sans', sans-serif;
 }
 
-.adoptinfo > p {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
-    font-size: 12pt;
+@media screen and (min-width: 601px) {
+    .adoptinfo > p {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .adoptinfo > p {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 9pt;
+    }
 }
 
 .logo {
+    width: 100%;
     max-width: 400px;
     margin: 0;
 }
 
-.fa {
-    padding: 10px;
-    font-size: 20px;
-    width: auto;
+@media screen and (min-width: 601px) {
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fa {
+        padding: 10px;
+        font-size: 11px;
+        width: auto;
+    }
 }
 
 nav {
@@ -162,15 +262,30 @@ nav ul li {
     line-height: 60px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    font-family: sans-serif;
-    color: #093C60;
-    font-weight: bold;
-    /* margin-right: 20px; */
-    font-size: 20px;
-    padding: .5rem;
-    margin: .5rem;
+@media screen and (min-width: 601px) {
+    nav ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: #093C60;
+        font-weight: bold;
+        /* margin-right: 20px; */
+        font-size: 20px;
+        padding: .5rem;
+        margin: .5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: #093C60;
+        font-weight: bold;
+        /* margin-right: 20px; */
+        font-size: 11px;
+        padding: .5rem;
+        margin: .5rem;
+    }
 }
 
 nav ul li:not(:last-child):after {
@@ -191,50 +306,102 @@ footer {
     color: white;
 }
 
-.buttoncart {
-    display: block;
-    border: none;
-    background-color: #81B641;
-    color: white;
-    padding: 6px 40px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    text-align: center;
+@media screen and (min-width: 601px) {
+    .buttoncart {
+        display: block;
+        border: none;
+        background-color: #81B641;
+        color: white;
+        padding: 6px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .buttongreen {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #81B641;
+        color: white;
+        padding: 6px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
 }
 
-.buttongreen {
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: #81B641;
-    color: white;
-    padding: 6px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
+@media screen and (max-width: 600px) {
+    .buttoncart {
+        display: block;
+        border: none;
+        background-color: #81B641;
+        color: white;
+        padding: 6px 40px;
+        font-size: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .buttongreen {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #81B641;
+        color: white;
+        padding: 6px 28px;
+        font-size: 10px;
+        cursor: pointer;
+        text-align: center;
+    }    
 }
+
 
 .moredogbutton {
     height: 6rem;
 }
 
-.buttongray {
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: #ECECEC;
-    border: none;
-    color: #093C5F;
-    padding: 10px 52px;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    /* margin: 20rem 0rem 20rem 0rem; */
-    cursor: pointer;
+@media screen and (min-width: 601px) {
+    .buttongray {
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: #ECECEC;
+        border: none;
+        color: #093C5F;
+        padding: 10px 52px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /* margin: 20rem 0rem 20rem 0rem; */
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .buttongray {
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: #ECECEC;
+        border: none;
+        color: #093C5F;
+        padding: 10px 52px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        /* margin: 20rem 0rem 20rem 0rem; */
+        cursor: pointer;
+    }
 }
 
 p.textcost {
@@ -272,17 +439,38 @@ footer ul li:not(:last-child):after {
     margin: .5rem;
 }
 
-label {
-    font-weight: bold;
-    font-size: 16pt;
-    color: #093C5F;
+@media screen and (min-width: 601px) {
+    label {
+        font-weight: bold;
+        font-size: 16pt;
+        color: #093C5F;
+    }
 }
 
-legend {
-    font-weight: bold;
-    font-size: 16pt;
-    color: #093C5F;
-    margin: 0rem -1rem;
+@media screen and (max-width: 600px) {
+    label {
+        font-weight: bold;
+        font-size: 10pt;
+        color: #093C5F;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    legend {
+        font-weight: bold;
+        font-size: 16pt;
+        color: #093C5F;
+        margin: 0rem -1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    legend {
+        font-weight: bold;
+        font-size: 10pt;
+        color: #093C5F;
+        margin: 0rem -1rem;
+    }
 }
 
 .formgroup {
@@ -333,10 +521,20 @@ fieldset {
     border: none;
 }
 
-fieldset > label {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
-    font-size: 12pt;
+@media screen and (min-width: 601px) {
+    fieldset > label {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    fieldset > label {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 9pt;
+    }
 }
 
 fieldset input {
@@ -348,7 +546,8 @@ fieldset input {
     display: block;
     object-fit: cover;
     padding-right: 1rem;
-    width:60px;
+    width: 100%;
+    max-width: 60px;
     height:60px;
 }
 
