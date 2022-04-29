@@ -18,6 +18,10 @@ p.textprice {
     display: inline;
 }
 
+p.textsmall {
+    font-family: 'Work Sans', sans-serif;
+}
+
 .sub-title {
     font-style: italic;
     font-weight: 300;
@@ -572,7 +576,7 @@ fieldset input {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:391px) {
     .grid {
         display: grid;
         grid-template-columns: auto;
