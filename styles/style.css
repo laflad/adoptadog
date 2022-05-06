@@ -2,9 +2,17 @@ body {
     margin: 0;
 }
 
+.main {
+    background-image: url(../images/susan-wilkinson-KCoCB27h15Y-unsplash.jpg);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
 header {
     display: flex;
     color: #81B741;
+    background: linear-gradient(20deg, black, #232F23)
 }
 
 p.textcost {
@@ -32,25 +40,6 @@ h3 {
     font-family: 'Neuton', serif;
     color: #093C5F;
     margin: 0rem 0rem .5rem 0rem;
-}
-
-.banner {
-    background-image: url("../images/christopher-harris-57366-unsplash.jpg");
-    width: 100%;
-    height: 20rem;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2rem 14rem;
-}
-
-.featuredimg {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position: center center;
-    background-repeat: no-repeat;
-
 }
 
 .blogimg {
@@ -86,6 +75,7 @@ h3 {
 
 .gridcontainer {
     border: 2px solid #D3D3D3;
+    background-color: white;
 }
 
 .adoptinfo {
@@ -102,73 +92,9 @@ h3 {
     font-family: 'Work Sans', sans-serif;
 }
 
-.logo {
-    width: 100%;
-    max-width: 400px;
-    margin: 0;
-}
-
-nav {
-  background-color: #EBEBEB;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0rem 11rem 0rem 11rem;
-}
-
-nav ul li {
-    display: inline;
-    line-height: 60px;
-}
-
-nav ul li:not(:last-child):after {
-    content: "/";
-    position: relative;
-    padding: .5rem;
-    margin: .5rem;
-}
-
-footer {
-    background-color: #1A3B5D;
-    text-align: center;
-    height: 24rem;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2rem 10rem;
-    color: white;
-}
-
 .moredogbutton {
     height: 6rem;
     padding: 2rem;
-}
-
-footer ul {
-    list-style-type: none;
-    margin-left: -3rem;
-    /* margin: 0rem 14rem 0rem 14rem; */
-}
-
-footer ul li {
-    display: inline;
-    line-height: 50px;
-    padding-left: 0px;
-}
-
-footer ul li a {
-    text-decoration: none;
-    font-family: sans-serif;
-    color: white;
-    font-weight: 600;
-}
-
-footer ul li:not(:last-child):after {
-    content: "/";
-    position: relative;
-    padding: .5rem;
-    margin: .5rem;
 }
 
 .formgroup {
@@ -244,189 +170,54 @@ fieldset input {
 .adoptedcontainer {
     padding: 1rem;
 }
-  
-@media screen and (min-width: 769px) {
-    section {
-        margin: 1rem 12rem;
-    }
 
-    
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 10px;
-        grid-row-gap: 30px;
-        clear: left;
-    }
-
-    .griddogs {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
-        clear: left;
-        padding: 1rem 0rem 4rem 0rem;
-    }
-
-    * {
-        box-sizing: border-box;
-      }
-      
-      .column {
-        float: left;
-        padding: 30px;
-        height: auto;
-      }
-      
-      .left {
-        width: 70%;
-      }
-      
-      .right {
-        width: 30%;
-      }
-      
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-    h1 {
-        font-family: 'Neuton', serif;
-        font-size: 28pt;
-        color: #093C5F;
-        margin: 0px;
-    }
-    
-    h2 {
-        font-family: 'Neuton', serif;
-        font-size: 24pt;
-        color: #093C5F;
-        margin: -1rem;
-    }
-
-    .adoptfeat > p {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 200;
-        font-size: 18pt;
-    }
-
-    .adoptinfo > p {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 200;
-        font-size: 12pt;
-    }
-
-    .topcart {
-        font-family: 'Work Sans', sans-serif;
-        color: white;
-        font-size: 14pt;
-        font-weight: 600;
-    }
-
-    .header-box2 {
-        float: right;
-        color: white;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 600;
-        font-size: 14pt;
-        text-align: right;
-    }
-
-    .adoptfeat > p {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 200;
-        font-size: 18pt;
-    }
-
-    .adoptinfo > p {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 200;
-        font-size: 12pt;
-    }
-
-    .fa {
-        padding: 10px;
-        font-size: 20px;
-        width: auto;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        font-family: sans-serif;
-        color: #093C60;
-        font-weight: bold;
-        /* margin-right: 20px; */
-        font-size: 20px;
-        padding: .5rem;
-        margin: .5rem;
-    }
-
-    .buttoncart {
-        display: block;
-        border: none;
-        background-color: #81B641;
-        color: white;
-        padding: 6px 40px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        text-align: center;
-    }
-
-    .buttongreen {
-        display: block;
+/* tablets */
+@media screen and (min-width: 500px) {    
+    .banner {
+        background-image: url("../images/christopher-harris-57366-unsplash.jpg");
         width: 100%;
-        border: none;
-        background-color: #81B641;
-        color: white;
-        padding: 6px 28px;
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
+        height: 5rem;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1rem 2rem;
     }
 
-    .buttongray {
-        position: absolute;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        background-color: #ECECEC;
-        border: none;
-        color: #093C5F;
-        padding: 10px 52px;
-        font-weight: 600;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        /* margin: 20rem 0rem 20rem 0rem; */
-        cursor: pointer;
+    section {
+        display: flex;
+        object-position: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 0 2%;
     }
 
-    label {
-        font-weight: bold;
-        font-size: 16pt;
-        color: #093C5F;
+    .column-one {
+        width: 65%;
+        padding: 0.5rem ;
+        background-color: rgba(256, 256, 256, 0.7);
     }
 
-    legend {
-        font-weight: bold;
-        font-size: 16pt;
-        color: #093C5F;
-        margin: 0rem -1rem;
+    .column-two {
+        width: 23%;
+        padding: 0.5rem;
+        background-color:#EBEFF195;
     }
 
-    fieldset > label {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 200;
-        font-size: 12pt;
+    .logo {
+        width: 100%;
+        max-width: 200px;
+        margin: 0;
     }
-}
 
+    .featuredimg {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center center;
+        background-repeat: no-repeat;
+    
+    }
 
-@media screen and (max-width:768px) {
     .grid {
         display: grid;
         grid-template-columns: auto auto;
@@ -503,14 +294,35 @@ fieldset input {
         width: auto;
     }
 
+    nav {
+        background-color: #EBEBEB;
+        object-position: center;
+      }
+      
+    nav ul {
+        list-style-type: none;
+        margin: 0rem 1rem;
+    }
+      
+    nav ul li {
+        display: inline;
+        line-height: 30px;
+    }
+
+    nav ul li:not(:last-child):after {
+        content: "/";
+        position: relative;
+        padding: 1rem;
+        margin: .5rem;
+    }
+
     nav ul li a {
         text-decoration: none;
         font-family: sans-serif;
         color: #093C60;
         font-weight: bold;
-        /* margin-right: 20px; */
-        font-size: 11px;
-        padding: .5rem;
+        font-size: 12px;
+        padding: 1rem;
         margin: .5rem;
     }
 
@@ -574,9 +386,382 @@ fieldset input {
         font-weight: 200;
         font-size: 9pt;
     }
+
+    footer {
+        background-color: #1A3B5D;
+        text-align: center;
+        height: auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5%;
+        color: white;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin-left: -3rem;
+        /* margin: 0rem 14rem 0rem 14rem; */
+    }
+
+    footer ul li {
+        display: inline;
+        line-height: 50px;
+        padding-left: 0px;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+
+    footer ul li:not(:last-child):after {
+        content: "/";
+        position: relative;
+        padding: .5rem;
+        margin: .5rem;
+    }
 }
 
-@media screen and (max-width:391px) {
+/* larger screens */
+@media screen and (min-width: 800px) {
+    .banner {
+        background-image: url("../images/christopher-harris-57366-unsplash.jpg");
+        width: 100%;
+        height: 17rem;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1rem 3rem;
+    }
+
+    .header-box1 {
+        color: white;
+        font-weight: 600;
+        font-size: 14pt;
+        text-align: left;
+        width: 40%;
+        margin: 1rem 10%;
+    }
+
+    .header-box2 {
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14pt;
+        text-align: right;
+        object-position: top;
+        margin: 1rem 10%;
+    }
+
+
+    .logo {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .featuredimg {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center center;
+        background-repeat: no-repeat;
+    
+    }
+
+    section {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 10%;
+        justify-content: center;
+    }
+
+    .column-one {
+        width: 65%;
+        padding: 1rem ;
+        background-color: rgba(256, 256, 256, 0.7);
+    }
+
+    .column-two {
+        width: 24%;
+        padding: 1rem;
+        background-color:#EBEFF195;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 30px;
+        clear: left;
+    }
+
+    .griddogs {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 60px;
+        grid-row-gap: 60px;
+        clear: left;
+        padding: 1rem 0rem 4rem 0rem;
+    }
+
+    h1 {
+        font-family: 'Neuton', serif;
+        font-size: 28pt;
+        color: #093C5F;
+        margin: 0px;
+    }
+    
+    h2 {
+        font-family: 'Neuton', serif;
+        font-size: 24pt;
+        color: #093C5F;
+        margin: -1rem;
+    }
+
+    .adoptfeat > p {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 18pt;
+    }
+
+    .adoptinfo > p {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 12pt;
+    }
+
+    .topcart {
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        font-size: 14pt;
+        font-weight: 600;
+    }
+
+    .adoptfeat > p {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 18pt;
+    }
+
+    .adoptinfo > p {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 12pt;
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: auto;
+    }
+
+    nav {
+        background-color: #EBEBEB;
+      }
+      
+    nav ul {
+        list-style-type: none;
+        margin: 0rem 11rem;
+    }
+      
+    nav ul li {
+        display: inline;
+        line-height: 60px;
+    }
+
+    nav ul li:not(:last-child):after {
+        content: "/";
+        position: relative;
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: #093C60;
+        font-weight: bold;
+        font-size: 16px;
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+    .buttoncart {
+        display: block;
+        border: none;
+        background-color: #81B641;
+        color: white;
+        padding: 6px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+        /* object-position: right; */
+    }
+
+    .buttongreen {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #81B641;
+        color: white;
+        padding: 6px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .buttongray {
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: #ECECEC;
+        border: none;
+        color: #093C5F;
+        padding: 10px 52px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /* margin: 20rem 0rem 20rem 0rem; */
+        cursor: pointer;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 16pt;
+        color: #093C5F;
+    }
+
+    legend {
+        font-weight: bold;
+        font-size: 16pt;
+        color: #093C5F;
+        margin: 0rem -1rem;
+    }
+
+    fieldset > label {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 200;
+        font-size: 12pt;
+    }
+
+    footer {
+        background-color: #1A3B5D;
+        text-align: center;
+        height: 24rem;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem 10rem;
+        color: white;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin-left: -3rem;
+        /* margin: 0rem 14rem 0rem 14rem; */
+    }
+
+    footer ul li {
+        display: inline;
+        line-height: 50px;
+        padding-left: 0px;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+
+    footer ul li:not(:last-child):after {
+        content: "/";
+        position: relative;
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+}
+
+/* mobile phome */
+@media screen and (max-width: 479px) {
+    .banner {
+        background-image: url("../images/christopher-harris-57366-unsplash.jpg");
+        width: 100%;
+        height: 5rem;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1rem 2rem;
+    }
+
+    .header-box2 {
+        float: right;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        font-size: 10pt;
+        text-align: right;
+    }
+
+    h2.sub-title {
+        font-size: 10pt;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 100px;
+        margin: 0;
+    }
+
+    .featuredimg {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        object-position: center center;
+        background-repeat: no-repeat;
+    
+    }
+
+    nav {
+        background-color: #EBEBEB;
+      }
+      
+    nav ul {
+        list-style-type: none;
+        margin: 0rem 1rem;
+    }
+      
+    nav ul li {
+        display: inline;
+        line-height: 30px;
+    }
+
+    nav ul li:not(:last-child):after {
+        content: "/";
+        position: relative;
+        padding: 1rem;
+        margin: .5rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: #093C60;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 1rem;
+        margin: .5rem;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: auto;
@@ -594,7 +779,99 @@ fieldset input {
         padding: 1rem 0rem 4rem 0rem;
     }
 
-    .right {
+    section {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 2%;
+    }
+
+    .column-one {
+        width: 90%;
+        padding: 1rem;
+        background-color: rgba(256, 256, 256, 0.7);
+    }
+
+    .column-two {
         display: none;
     }
+
+    .buttoncart {
+        display: block;
+        border: none;
+        background-color: #81B641;
+        color: white;
+        padding: 6px 40px;
+        font-size: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .buttongreen {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #81B641;
+        color: white;
+        padding: 6px 28px;
+        font-size: 10px;
+        cursor: pointer;
+        text-align: center;
+    }  
+
+    .buttongray {
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: #ECECEC;
+        border: none;
+        color: #093C5F;
+        padding: 10px 52px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        /* margin: 20rem 0rem 20rem 0rem; */
+        cursor: pointer;
+    }
+
+    footer {
+        background-color: #1A3B5D;
+        text-align: center;
+        height: auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5%;
+        color: white;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin-left: -3rem;
+        /* margin: 0rem 14rem 0rem 14rem; */
+    }
+
+    footer ul li {
+        display: inline;
+        line-height: 50px;
+        padding-left: 0px;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+
+    footer ul li:not(:last-child):after {
+        content: "/";
+        position: relative;
+        padding: .5rem;
+        margin: .5rem;
+    }
 }
+
