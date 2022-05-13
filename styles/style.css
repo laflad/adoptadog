@@ -153,7 +153,7 @@ input[type=city] {
 }
 
 select {
-    width: 80px;
+    width: 100px;
     padding: 12px 12px;
     margin: 1rem 0rem 2rem 0rem;
     display: block;
