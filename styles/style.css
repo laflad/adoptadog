@@ -40,6 +40,14 @@ p.textsmall {
     margin: 2rem 0rem;
 }
 
+.header-box2 i {
+    display: inline !important;
+}
+
+.header-box2 p {
+    display: inline !important;
+}
+
 h3 {
     font-family: 'Neuton', serif;
     color: #093C5F;
@@ -153,7 +161,7 @@ input[type=city] {
 }
 
 select {
-    width: 80px;
+    width: 100px;
     padding: 12px 12px;
     margin: 1rem 0rem 2rem 0rem;
     display: block;
@@ -253,8 +261,8 @@ fieldset input {
     .griddogs {
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
         clear: left;
         padding: 1rem 0rem 4rem 0rem;
     }
@@ -282,13 +290,6 @@ fieldset input {
         font-family: 'Work Sans', sans-serif;
         font-weight: 200;
         font-size: 9pt;
-    }
-
-    .topcart {
-        font-family: 'Work Sans', sans-serif;
-        color: white;
-        font-size: 10pt;
-        font-weight: 600;
     }
 
     .header-box2 {
@@ -361,6 +362,9 @@ fieldset input {
         cursor: pointer;
         text-align: center;
         border-radius: 5px;
+        margin-top: 1rem;
+        margin-right: 0;
+
     }
 
     .buttongreen {
@@ -544,8 +548,8 @@ fieldset input {
     .griddogs {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
         clear: left;
         padding: 1rem 0rem 4rem 0rem;
     }
@@ -574,13 +578,6 @@ fieldset input {
         font-family: 'Work Sans', sans-serif;
         font-weight: 200;
         font-size: 12pt;
-    }
-
-    .topcart {
-        font-family: 'Work Sans', sans-serif;
-        color: white;
-        font-size: 14pt;
-        font-weight: 600;
     }
 
     .adoptfeat > p {
@@ -643,6 +640,7 @@ fieldset input {
         cursor: pointer;
         text-align: center;
         border-radius: 5px;
+
         /* object-position: right; */
     }
 
@@ -833,8 +831,8 @@ fieldset input {
     .griddogs {
         display: grid;
         grid-template-columns: auto;
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
         clear: left;
         padding: 1rem 0rem 4rem 0rem;
     }
@@ -866,6 +864,8 @@ fieldset input {
         cursor: pointer;
         text-align: center;
         border-radius: 5px;
+        margin-right: 0;
+
     }
 
     .buttonform {
