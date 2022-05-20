@@ -1,25 +1,12 @@
-var button = document.getElementById("buttonform");
-
-button.onclick = function() {
-   
-    let appName = document.getElementById('aName').value;
-
-    let appEmail = document.getElementById('aEmail').value;
-
-    let appAddress = document.getElementById('aAddress').value;
-
-    let appCity = document.getElementById('aCity').value;
-
-    let appState = document.querySelector('#state').value;
-
-    let appZip = document.getElementById('aZip').value;
-
-    let firstTimer = document.getElementsByName('input[name="firstTimeAdopt"]:checked').value;
-
-    let selectLoc = document.querySelector('#location').value;
-
+$('.buttonform').click(function(){
+    var appName = $('#aName').val()
+    var appEmail = $('#aEmail').val()
+    var appAddress = $('#aAddress').val()
+    var appCity = $('#aCity').val()
+    var appState = $('#state').val()
+    var appZip = $('#aZip').val()
+    var firstTimer = $("input[type='radio']:checked").val();
+    var selectLoc = $('#location').val()
     console.log(appName, appEmail, appAddress, appCity, appState, appZip, firstTimer, selectLoc);
-    
     alert("Thank you. The form information has been received");
-
-}
+})
